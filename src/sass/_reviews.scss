@@ -1,0 +1,57 @@
+// .reviews {
+//     background-color: $reviews-background-color;
+// }
+.bg-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+}
+.customer-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 29px;
+}
+.block-customer-text {
+    border-bottom: 1px solid #E1E1E1;
+    width: 157px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.customer-text {
+    color: $quaternary-text-color;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.58;
+    text-align: center;
+}
+.bg-text {
+    background-color: $reviews-text-background-color;
+    width: 280px;
+}
+.customer-name {
+    color: $quaternary-text-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.85;
+    text-align: center;
+}
+.slider-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+.slider-list-item-big:not(:last-child) {
+    margin-right: 18px;
+}
+.slider-svg {
+    fill: $fill-svg;
+}
+.slider-svg-big {
+    fill: $secondary-fill-svg;
+}
+.kovichki {
+    fill: $fill-svg-only;
+}
