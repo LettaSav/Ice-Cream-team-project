@@ -1,5 +1,9 @@
 .locations-section {
-  background: #fff5f6;
+  background-image: linear-gradient(
+    0 deg,
+    (229, 229, 229) 0% 15%,
+    (255, 245, 246) 15% 100%
+  );
 }
 
 .locations-list {
@@ -9,7 +13,18 @@
   margin-right: 30px;
   margin-bottom: 54px;
 
-  @media screen and (min-width: 772px) {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-bottom: 81px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 86px;
   }
 }
 .locations-list-item {
@@ -23,8 +38,21 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
+  @media screen and (min-width: 1200px) {
+    padding-left: 43px;
+    padding-right: 44px;
+    padding-top: 51px;
+    padding-bottom: 62px;
+  }
   &:not(:last-child) {
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 31px;
+    }
   }
 }
 .locations-list-item-header {
@@ -41,6 +69,11 @@
 
   color: #ffffff;
   margin-bottom: 25px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 .locations-list-item-header-secondary {
   width: 130px;
@@ -56,6 +89,11 @@
 
   color: #ffffff;
   margin-bottom: 25px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 .locations-list-item-name {
   font-family: DM Sans;
@@ -66,6 +104,11 @@
   letter-spacing: 0.04em;
   color: #000000;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 .locations-list-item-text {
   font-family: DM Sans;
@@ -76,6 +119,10 @@
   color: #907e82;
   padding-bottom: 25px;
   border-bottom: 1px solid #e1e1e1;
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.81;
+  }
 }
 .locations-list-item-working-periop-list {
   padding: 0;
@@ -122,9 +169,16 @@
 }
 .locations-navigation-list {
   padding: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .locations-navigation-item {
   text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+  }
 }
 .locations-navigation-link-main {
   font-family: DM Sans;
