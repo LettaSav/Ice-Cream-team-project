@@ -1,12 +1,13 @@
 .how_its_made {
   background-color: $secondary-background-color;
   position: relative;
-}
-.how_its_made .container {
-  width: 100%;
   padding-top: 125px;
   padding-bottom: 145px;
 }
+.how_its_made .container {
+  width: 100%;
+}
+
 .how_its_made_main-title {
   font-family: $secondary-font-family;
   font-style: normal;
