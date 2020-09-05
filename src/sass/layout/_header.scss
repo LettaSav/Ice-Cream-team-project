@@ -41,8 +41,8 @@
     font-size: 14px;
     line-height: 1.29;
     @media screen and (max-width: 1199px) {
-      padding-top: 6px;
-      padding-bottom: 6px;
+      padding-top: 12px;
+      padding-bottom: 12px;
       padding-left: 21px;
     }
     @media screen and (min-width: 1200px) {
@@ -56,9 +56,6 @@
     &:active {
       color: $secondary-text-color;
     }
-    // &.current {
-    //   color: $secondary-text-color;
-    // }
   }
 }
 
@@ -82,12 +79,10 @@
     top: 0;
     right: 0;
   }
-
   &.is-open {
     display: block;
     transform: translateY(0);
   }
-
   @media screen and (min-width: 1200px) {
     display: flex;
   }
