@@ -1,0 +1,125 @@
+
+.container {
+    padding-top: 154px;
+    padding-bottom: 170px;
+}
+.customer-img {
+    border-radius: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 29px;
+}
+.bg-text {
+    width: 100%;
+    background-color: $reviews-text-background-color;
+    background-image: url(../images/reviews/kovichki.png);
+    background-repeat: no-repeat;
+    background-size: 54px 40px;
+    background-position: 61px 28px;
+    margin-bottom: 30px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+            background-image: url(../images/reviews/kovichki@2x.png);
+    }
+}
+.customer-text {
+    display: block;
+    color: $quaternary-text-color;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.58;
+    text-align: center;
+    text-decoration: underline;
+    padding: 43px 66px 26px 57px;
+}
+.slider {
+    max-width: 172px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.slider-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:not(:last-child) {
+        margin-bottom: 18px;
+    }
+}
+.slider-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+.slider-svg {
+    fill: $fill-svg;
+}
+.slider-name {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+    color: $quaternary-text-color;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.slider-list-item-big:not(:last-child) {
+    margin-right: 18px;
+}
+.slider-svg-big {
+    fill: $secondary-fill-svg;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        padding-top: 279px;
+        padding-right: 74px;
+        padding-bottom: 197px;
+        padding-left: 74px;
+    }
+    .customer-img {
+        margin-bottom: 19px;
+    }
+    .bg-text {
+        background-position: 40px 30px;
+        margin-bottom: 24px;
+    }
+    .customer-text {
+        font-size: 14px;
+        line-height: 2.16;
+        letter-spacing: 0.04em;
+        padding: 47px 80px 34px 80px;
+    }
+    .slider-list {
+        &:not(:last-child) {
+            margin-bottom: 14px;
+        }
+    }
+    .slider-name {
+        font-size: 16px;
+        line-height: 1.87;
+        margin-bottom: 35px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        padding-top: 382px;
+        padding-right: 176px;
+        padding-bottom: 234px;
+        padding-left: 178px;
+    }
+    .customer-img {
+        margin-bottom: 15px;
+    }
+    .bg-text {
+        width: 926px;
+        background-position: 50px 31px;
+        margin-bottom: 15px;
+    }
+    .customer-text {
+        font-size: 16px;
+        line-height: 1.87;
+    }
+    .slider-name {
+        font-size: 20px;
+        line-height: 1.85;
+    }
+}
