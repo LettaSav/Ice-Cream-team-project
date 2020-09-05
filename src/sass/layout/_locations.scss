@@ -1,9 +1,19 @@
 .locations-section {
   background-image: linear-gradient(
     0 deg,
-    (229, 229, 229) 0% 15%,
-    (255, 245, 246) 15% 100%
+    rgba(229, 229, 229, 1) 0% 15%,
+    rgba(255, 245, 246, 1) 15% 100%
   );
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      0 deg,
+      (229, 229, 229) 0% 15%,
+      (255, 245, 246) 15% 100%
+    );
+    background-image: url(../images/png/locations-bg@1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .locations-list {
