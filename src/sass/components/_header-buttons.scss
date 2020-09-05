@@ -1,0 +1,84 @@
+.burger-btn {
+  position: absolute;
+  // top: 23px;
+  z-index: 10;
+  // right: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  @media screen and (max-width: 767px) {
+    right: 20px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    right: 224px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+  .close-btn-icon {
+    display: none;
+  }
+  &.is-open {
+    @media screen and (max-width: 767px) {
+      right: 28px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      top: 23px;
+      right: 34px;
+    }
+    .close-btn-icon {
+      display: block;
+    }
+    .burger-btn-icon {
+      display: none;
+    }
+  }
+}
+.modal-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: $secondary-text-color;
+  background-color: $primary-text-color;
+  border-radius: 22px;
+  height: 44px;
+  @media screen and (max-width: 767px) {
+    width: 209px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 186px;
+  }
+  transition: background-color 250ms $transition-timing-function;
+  &:hover,
+  &:focus {
+    background-color: $hover-background-color-second;
+  }
+}
+.header .container > .modal-btn {
+  width: 160px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  .modal-btn-icon {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-container > .modal-btn,
+  .close-btn {
+    display: none;
+  }
+}
+.menu-container > .modal-btn {
+  margin: auto;
+  margin-bottom: 19px;
+  .modal-btn-icon {
+    margin-left: 20px;
+  }
+}
