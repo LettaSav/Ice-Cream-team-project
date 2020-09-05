@@ -44,7 +44,7 @@
   padding-top: 43px;
   padding-bottom: 43px;
   text-decoration: none;
-  background: #ffffff;
+  background: $primary-background-color;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
@@ -68,16 +68,16 @@
 .locations-list-item-header {
   width: 80px;
   text-align: center;
-  font-family: DM Sans;
+  font-family: $primary-font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
-  background: #f0d1a5;
+  background: $quaternary-background-color;
   border-radius: 4px;
   letter-spacing: 0.04em;
 
-  color: #ffffff;
+  color: $primary-text-color;
   margin-bottom: 25px;
 
   @media screen and (min-width: 1200px) {
@@ -88,7 +88,7 @@
 .locations-list-item-header-secondary {
   width: 130px;
   text-align: center;
-  font-family: DM Sans;
+  font-family: $primary-font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -97,7 +97,7 @@
   border-radius: 4px;
   letter-spacing: 0.04em;
 
-  color: #ffffff;
+  color: $primary-text-color;
   margin-bottom: 25px;
 
   @media screen and (min-width: 1200px) {
@@ -106,13 +106,13 @@
   }
 }
 .locations-list-item-name {
-  font-family: DM Sans;
+  font-family: $primary-font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
   letter-spacing: 0.04em;
-  color: #000000;
+  color: $quaternary-text-color;
   margin-bottom: 10px;
 
   @media screen and (min-width: 1200px) {
@@ -121,12 +121,12 @@
   }
 }
 .locations-list-item-text {
-  font-family: DM Sans;
+  font-family: $primary-font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  color: #907e82;
+  color: $quinary-text-color;
   padding-bottom: 25px;
   border-bottom: 1px solid #e1e1e1;
   @media screen and (min-width: 1200px) {
@@ -144,22 +144,22 @@
   margin-bottom: 10px;
 }
 .locations-list-item-working-period-item-day {
-  font-family: DM Sans;
+  font-family: $primary-font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
-  color: #000000;
+  color: $quaternary-text-color;
   text-align: left;
   margin-bottom: 20px;
 }
 .locations-list-item-working-period-item-time {
-  font-family: DM Sans;
+  font-family: $primary-font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.83;
-  color: #ffa5ba;
+  color: $tertiary-text-color;
 }
 .locations-address {
   padding-top: 25px;
@@ -170,12 +170,12 @@
 }
 
 .locations-address-link {
-  font-family: DM Sans;
+  font-family: $primary-font-family;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  color: #907e82;
+  color: $quinary-text-color;
 }
 .locations-navigation-list {
   padding: 0;
@@ -191,7 +191,7 @@
   }
 }
 .locations-navigation-link-main {
-  font-family: DM Sans;
+  font-family: $primary-font-family;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -204,13 +204,22 @@
   padding-bottom: 10px;
   padding-right: 30px;
   border-radius: 20px;
-  color: #ffffff;
-  background: #d41342;
+  color: $primary-text-color;
+  background: $button-background-color;
   border-radius: 22px;
   margin-bottom: 10px;
+
+  @include transition(color);
+  @include transition(background);
+
+  &:hover,
+  &:focus {
+    background-color: hover-background-color-first;
+    color: $primary-text-color;
+  }
 }
 .locations-navigation-link-secondary {
-  font-family: DM Sans;
+  font-family: $primary-font-family;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -218,13 +227,22 @@
   display: inline-flex;
   align-items: center;
   text-align: center;
-  color: #d41443;
+  color: $secondary-text-color;
   padding-top: 10px;
   padding-left: 32px;
   padding-bottom: 10px;
   padding-right: 50px;
-  background: #ffffff;
+  background: $primary-background-color;
   border-radius: 22px;
+
+  @include transition(color);
+  @include transition(background);
+
+  &:hover,
+  &:focus {
+    background-color: $hover-background-color-second;
+    color: $secondary-text-color;
+  }
 }
 .locations-follow-icon {
   width: 8px;
@@ -233,12 +251,12 @@
   align-items: baseline;
 }
 .mane-colored {
-  fill: #d41443;
+  fill: $button-background-color;
   stroke-width: 2px;
-  stroke: #d41443;
+  stroke: $button-background-color;
 }
 .secondary-colored {
-  fill: #ffffff;
+  fill: $primary-background-color;
   stroke-width: 2px;
-  stroke: #ffffff;
+  stroke: $primary-background-color;
 }
