@@ -52,12 +52,13 @@
     color: $primary-text-color;
     transition: color 250ms $transition-timing-function;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       color: $secondary-text-color;
     }
-    &.current {
-      color: $secondary-text-color;
-    }
+    // &.current {
+    //   color: $secondary-text-color;
+    // }
   }
 }
 
@@ -75,6 +76,7 @@
     background-color: $header-menu-bg-color;
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
     position: absolute;
+    z-index: 6;
     transform: translateY(-100%);
     transition: 250ms $transition-timing-function;
     top: 0;
