@@ -1,7 +1,7 @@
 .reviews {
   position: relative;
-  padding-top: 144px;
-  padding-bottom: 170px;
+  // padding-top: 144px;
+  // padding-bottom: 170px;
   margin: auto;
 }
 .customer-img {
@@ -11,18 +11,59 @@
   margin-bottom: 29px;
 }
 .bg-text {
-  width: 100%;
+  // width: 100%;
   background-color: $reviews-text-background-color;
-  background-image: url('../images/reviews/kovichki.png');
-  background-repeat: no-repeat;
-  background-size: 54px 40px;
-  background-position: 61px 28px;
   margin-bottom: 30px;
+
+  @media screen and (max-width: 1199px) {
+    width: 620px;
+    background-image: url('../images/reviews/kovichki.png'),
+      url('../images/reviews/tablet/text-underline-tablet.png');
+    background-repeat: no-repeat;
+    background-size: 54px 40px, 544px 106px;
+    background-position: 49px 13px, 40px 15px;
+    padding: 30px 36px 28px 40px;
+  }
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('../images/reviews/kovichki@2x.png');
+    background-image: url('../images/reviews/kovichki@2x.png'),
+      url('../images/reviews/tablet/text-underline-tablet@2x.png');
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    background-image: url('../images/reviews/kovichki.png'),
+      url('../images/reviews/mobile/text-underline-mobile.png');
+    background-repeat: no-repeat;
+    background-size: 54px 40px, 180px 217px;
+    background-position: 61px 28px, 50px 71px;
+    padding: 43px 66px 26px 57px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/reviews/kovichki@2x.png'),
+      url('../images/reviews/mobile/text-underline-mobile@2x.png');
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 926px;
+    background-image: url('../images/reviews/kovichki.png'),
+      url('../images/reviews/desktop/text-underline-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 54px 40px, 822px 74px;
+    background-position: 61px 18px, 55px 19px;
+    //  padding: 43px 66px 26px 57px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/reviews/kovichki@2x.png'),
+      url('../images/reviews/desktop/text-underline-desktop@2x.png');
   }
 }
 .customer-text {
@@ -33,8 +74,8 @@
   font-size: 12px;
   line-height: 2.58;
   text-align: center;
-  text-decoration: underline;
-  padding: 43px 66px 26px 57px;
+  // text-decoration: underline;
+  // padding: 43px 66px 26px 57px;
 }
 .slider {
   max-width: 172px;
@@ -71,29 +112,40 @@
   fill: $secondary-fill-svg;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .reviews {
+    padding-top: 144px;
+    padding-bottom: 170px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .reviews {
+    padding-top: 279px;
+  }
   .bg-text {
     background-color: $reviews-text-background-color, 0.4;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .reviews {
-    padding-top: 279px;
-    // padding-bottom: 197px;
-  }
   .customer-img {
     margin-bottom: 19px;
   }
   .bg-text {
-    background-position: 40px 30px;
+    // background-position: 40px 30px;
     margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .customer-text {
     font-size: 14px;
-    line-height: 2.16;
+    font-weight: 500;
+    line-height: 2.143;
     letter-spacing: 0.04em;
-    padding: 47px 80px 34px 80px;
+    padding-left: 32px;
+    padding-right: 20px;
+    text-align: center;
   }
   .slider-list {
     &:not(:last-child) {
@@ -107,23 +159,26 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .reviews .container {
-    padding-top: 382px;
-    padding-right: 176px;
-    // padding-bottom: 234px;
-    padding-left: 178px;
+  .reviews {
+    padding-top: 377px;
+    // padding-right: 176px;
+    padding-bottom: 234px;
+    // padding-left: 178px;
   }
   .customer-img {
     margin-bottom: 15px;
   }
   .bg-text {
     width: 926px;
-    background-position: 50px 31px;
+    // background-position: 50px 31px;
     margin-bottom: 15px;
+    padding: 32px 54px 32px 50px;
   }
   .customer-text {
     font-size: 16px;
     line-height: 1.87;
+    padding-left: 50px;
+    padding-right: 40px;
   }
   .slider-name {
     font-size: 20px;
