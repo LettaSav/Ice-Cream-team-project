@@ -161,6 +161,15 @@
   border-radius: 22px;
 
   cursor: pointer;
+
+  @include transition(color);
+  @include transition(background);
+
+  &:hover,
+  &:focus {
+    background: $hover-background-color-second;
+    color: $secondary-text-color;
+  }
 }
 .how_its_made-button::after {
   display: inline-block;
