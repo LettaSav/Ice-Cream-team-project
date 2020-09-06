@@ -583,7 +583,7 @@ ul {
   background: #ffffff;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .hero {
     width: 100%;
     height: 399px;
@@ -622,7 +622,7 @@ ul {
     margin-bottom: 7px;
   }
 }
-@media screen and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (max-width: 1200px) and (min-resolution: 192dpi), screen and (max-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (max-width: 1199px) and (min-resolution: 192dpi), screen and (max-width: 1199px) and (min-resolution: 2dppx) {
   .hero {
     background-image: url("/milk-tablet@2x.5c5eae0a.png"), url("/ice-cream-tablet@2x.870b7283.png"), url("/girl-tablet@2x.df02fc81.png"), url("/ellipse-tablet@2x.400e3765.png");
     background-size: 124px, 143px, 168px, 324px;
@@ -1181,6 +1181,16 @@ ul {
   border: transparent;
   border-radius: 22px;
   cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.how_its_made-button:hover, .how_its_made-button:focus {
+  background: #ecebeb;
+  color: #d41443;
 }
 
 .how_its_made-button::after {
