@@ -1,28 +1,8 @@
 .reviews {
-  padding-top: 154px;
+  position: relative;
+  padding-top: 144px;
   padding-bottom: 170px;
-
-  // &::before {
-  //   position: absolute;
-  //   content: '';
-  //   display: block;
-  background-image: url('../images/reviews/mobile/ice-creams-mobile.png');
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  // z-index: 1;
-
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .reviews {
-      background-image: url('../images/reviews/mobile/ice-creams-mobile@2x.png');
-      background-size: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-  }
-  // }
+  margin: auto;
 }
 .customer-img {
   border-radius: 44px;
@@ -46,6 +26,7 @@
   }
 }
 .customer-text {
+  opacity: 1;
   display: block;
   color: $quaternary-text-color;
   font-style: normal;
@@ -89,12 +70,17 @@
 .slider-svg-big {
   fill: $secondary-fill-svg;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .bg-text {
+    background-color: $reviews-text-background-color, 0.4;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .reviews .container {
-    // padding-top: 279px;
-    padding-right: 74px;
+  .reviews {
+    padding-top: 279px;
     // padding-bottom: 197px;
-    padding-left: 74px;
   }
   .customer-img {
     margin-bottom: 19px;
@@ -120,7 +106,7 @@
     margin-bottom: 35px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .reviews .container {
     padding-top: 382px;
     padding-right: 176px;

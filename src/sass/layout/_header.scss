@@ -2,31 +2,37 @@
   position: absolute;
   width: 100%;
   background-color: transparent;
+  margin: auto;
+  @media screen and (max-width: 767px) {
+    max-width: 320px;
+  }
+
   .container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     @media screen and (max-width: 767px) {
+      max-width: 320px;
       padding-top: 6px;
     }
     @media screen and (min-width: 768px) {
       padding-top: 37px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       padding-left: 46px;
     }
   }
 }
 .header-menu-list {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
     .header-menu-list-item:not(:last-child) {
       margin-right: 35px;
     }
   }
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1199px) {
     .header-menu-list-item {
       border-top: 1px solid #e18298;
     }
@@ -40,12 +46,12 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
-    @media screen and (max-width: 1279px) {
+    @media screen and (max-width: 1199px) {
       padding-top: 12px;
       padding-bottom: 12px;
       padding-left: 21px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       font-size: 16px;
       line-height: 1.32;
     }
@@ -64,11 +70,11 @@
     width: 250px;
     height: 502px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 254px;
     height: 400px;
   }
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
     background-color: $header-menu-bg-color;
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
@@ -83,7 +89,7 @@
     display: block;
     transform: translateY(0);
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }

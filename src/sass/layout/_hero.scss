@@ -1,8 +1,8 @@
 /* HERO SECTION */
 .hero {
   background: $tertiary-background-color;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  // margin-right: auto;
 
   &-title-accent {
     color: $secondary-text-color;
@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1200px) {
   .hero {
     width: 768px;
     height: 399px;
@@ -234,7 +234,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .hero {
     padding-top: 171px;
     padding-bottom: 56px;

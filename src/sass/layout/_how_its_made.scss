@@ -3,6 +3,85 @@
   position: relative;
   padding-top: 125px;
   padding-bottom: 145px;
+  margin: auto;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+    &::after {
+      // position: absolute;
+      bottom: -72px;
+      // content: '';
+      // width: 100%;
+      height: 122px;
+      // display: block;
+      background-image: url('../images/reviews/mobile/ice-creams-mobile.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 5;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      &::after {
+        background-image: url('../images/reviews/mobile/ice-creams-mobile@2x.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &::after {
+      bottom: -158px;
+      height: 264px;
+      background-image: url('../images/reviews/tablet/ice-creams-tablet.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      &::after {
+        background-image: url('../images/reviews/tablet/ice-creams-tablet@2x.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &::after {
+      bottom: -158px;
+      height: 264px;
+      background-image: url('../images/reviews/desktop/ice-creams-desktop.png');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      &::after {
+        background-image: url('../images/reviews/desktop/ice-creams-desktop@2x.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }
 .how_its_made .container {
   width: 100%;
@@ -88,7 +167,7 @@
   content: ' ';
   width: 10px;
   height: 10px;
-  background-image: url(../images/how_its_made/button_arrow.svg);
+  background-image: url('../images/how_its_made/button_arrow.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -139,7 +218,7 @@
 }
 @media screen and (max-width: 767px) {
   .how_its_made .container {
-    background-image: url(../images/how_its_made/milky_waves.png);
+    background-image: url('../images/how_its_made/milky_waves.png');
     background-repeat: no-repeat;
     background-size: auto;
     background-position-y: 768px;
@@ -216,9 +295,9 @@
     width: 180px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .how_its_made .container {
-    width: 1280px;
+    width: 1200px;
     margin-bottom: 310px;
   }
   .how_its_made_main-title {
@@ -232,7 +311,7 @@
     margin-bottom: 55px;
   }
   .how_its_made .container {
-    background-image: url(../images/how_its_made/milky_waves_dp.png);
+    background-image: url('../images/how_its_made/milky_waves_dp.png');
     background-repeat: no-repeat;
     background-size: auto;
     background-position-y: 342px;

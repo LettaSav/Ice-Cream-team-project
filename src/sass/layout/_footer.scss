@@ -1,6 +1,6 @@
 .footer {
   position: relative;
-
+  margin: auto;
   padding-top: 56px;
   padding-bottom: 25px;
 
@@ -11,7 +11,7 @@
     padding-bottom: 18px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 82px;
     padding-bottom: 10px;
   }
@@ -26,7 +26,7 @@
     margin-bottom: 120px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 106px;
   }
 }
@@ -50,14 +50,14 @@
     letter-spacing: 0.04em;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 30px;
     line-height: 1.1333;
   }
 }
 
 .footer-title-break {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -79,7 +79,7 @@
     letter-spacing: 0.06em;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 15px;
 
     font-size: 58px;
@@ -88,7 +88,7 @@
 }
 
 .footer-title-second-part-break {
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -98,7 +98,7 @@
   justify-content: flex-end;
   margin-bottom: 46px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
@@ -110,7 +110,7 @@
     margin-right: 30px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 24px;
   }
 }
@@ -147,7 +147,7 @@
     line-height: 1.8571;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.02em;
@@ -187,7 +187,7 @@
       bottom: 73px;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       bottom: 45px;
     }
   }
