@@ -24,6 +24,11 @@
     }
   }
 }
+
+.current {
+  color: $secondary-text-color;
+}
+
 .header-menu-list {
   @media screen and (min-width: 1200px) {
     display: flex;

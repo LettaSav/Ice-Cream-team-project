@@ -24,19 +24,39 @@
   &-navigation-item-link {
     font-family: $primary-font-family;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.286;
+    // font-size: 14px;
+    // line-height: 1.286;
     letter-spacing: 0.03em;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-right: 20px;
+    // padding-top: 10px;
+    // padding-left: 20px;
+    // padding-bottom: 10px;
+    // padding-right: 20px;
     border-radius: 20px;
     border-style: unset;
     cursor: pointer;
 
     @include transition(color);
     @include transition(background);
+
+    @media screen and (max-width: 1199px) {
+      font-size: 8px;
+      line-height: 1.25;
+
+      padding-top: 7px;
+      // padding-left: 13px;
+      padding-bottom: 7px;
+      // padding-right: 13px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.28;
+
+      padding-top: 11px;
+      // padding-left: 20px;
+      padding-bottom: 11px;
+      // padding-right: 20px;
+    }
 
     &:hover.first,
     &:focus.first {
@@ -53,11 +73,30 @@
     &.first {
       color: $primary-text-color;
       background: $button-background-color;
+
+      @media screen and (max-width: 1199px) {
+        padding-left: 13px;
+        padding-right: 13px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        padding-left: 20px;
+
+        padding-right: 20px;
+      }
     }
 
     &.second {
       color: $secondary-text-color;
       background: $primary-background-color;
+      @media screen and (max-width: 1199px) {
+        padding-left: 11px;
+        padding-right: 11px;
+      }
+      @media screen and (min-width: 1200px) {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
     }
   }
 }
